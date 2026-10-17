@@ -7,7 +7,7 @@
 [![Environment](https://img.shields.io/badge/Environment-Server-purple)](https://modrinth.com/mods?e=server)
 [![Minecraft](https://img.shields.io/badge/Minecraft-26.3-blue)](https://minecraft.net)
 
-A lightweight **Fabric** mod for **Minecraft 26.3** that adds configurable rules to override vanilla behaviors in a clean and controlled way.
+A lightweight **Fabric** serverside mod for **Minecraft 26.3** that adds configurable rules to override vanilla behaviors in a clean and controlled way.
 
 </div>
 
@@ -43,13 +43,6 @@ config/vanillaoverrides.json
 ```
 
 You can edit the file manually or change values using commands. Changes are saved automatically.
-
-## Installation
-
-1. Install [Fabric Loader](https://fabricmc.net/use/) for Minecraft **26.3**
-2. Install [Fabric API](https://modrinth.com/mod/fabric-api)
-3. Place the mod `.jar` into your `mods` folder
-4. Launch the game
 
 ## Suggestions
 
