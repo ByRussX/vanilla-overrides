@@ -13,13 +13,10 @@
 	},
 	"license": "CC0-1.0",
 	"icon": "assets/vanilla-overrides/icon.png",
-	"environment": "server",
+	"environment": "*",
 	"entrypoints": {
 		"main": [
 			"byrussx.vanillaoverrides.VanillaOverrides"
-		],
-		"fabric-datagen": [
-			"byrussx.vanillaoverrides.VanillaOverridesDataGenerator"
 		]
 	},
 	"mixins": [

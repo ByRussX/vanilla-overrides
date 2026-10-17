@@ -3,7 +3,8 @@
 	"package": "byrussx.vanillaoverrides.mixin",
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
-		"ExampleMixin"
+		"LeashVillagersMixin",
+		"LeashVillagersNeckHeightMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1
