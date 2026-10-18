@@ -4,7 +4,8 @@
 	"compatibilityLevel": "JAVA_25",
 	"mixins": [
 		"LeashVillagersMixin",
-		"LeashVillagersNeckHeightMixin"
+		"LeashVillagersNeckHeightMixin",
+		"UnleashVillagersMixin"
 	],
 	"injectors": {
 		"defaultRequire": 1

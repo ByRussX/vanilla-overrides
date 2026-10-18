@@ -1,7 +1,7 @@
 package byrussx.vanillaoverrides;
 
 import byrussx.vanillaoverrides.config.ModConfig;
-import byrussx.vanillaoverrides.command.ModCommands;
+import byrussx.vanillaoverrides.commands.ModCommands;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;

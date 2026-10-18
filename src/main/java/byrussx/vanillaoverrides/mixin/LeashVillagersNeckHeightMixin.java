@@ -7,7 +7,7 @@ import org.spongepowered.asm.mixin.Mixin;
 @Mixin(Villager.class)
 public abstract class LeashVillagersNeckHeightMixin
 {
-    // Overloads original getLeashOffset() method from Leashable interface
+    // Overrides original getLeashOffset() method from Leashable interface
     public Vec3 getLeashOffset(float partialTicks)
     {
         Villager villager = (Villager) (Object) this;
