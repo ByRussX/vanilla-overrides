@@ -6,43 +6,13 @@
 
 [![Environment](https://img.shields.io/badge/Environment-Server-purple)](https://modrinth.com/mods?e=server)
 [![Minecraft](https://img.shields.io/badge/Minecraft-26.3-blue)](https://minecraft.net)
+[![Modrinth](https://img.shields.io/modrinth/dt/vanilla-overrides)](https://modrinth.com/mod/vanilla-overrides)
 
-A lightweight **Fabric** serverside mod for **Minecraft 26.3** that adds configurable rules to override vanilla behaviors in a clean and controlled way.
+A lightweight **Fabric** serverside mod that adds configurable rules to override vanilla behaviors in a clean and controlled way.
 
 </div>
 
 ---
-
-## Features
-
-- Villagers can be leashed
-
-
-## Commands
-
-The main command is:
-
-```
-/overrides
-```
-
-Examples:
-
-```
-/overrides villagerLeads          → Shows the current value
-/overrides villagerLeads true     → Enables the rule
-/overrides villagerLeads false    → Disables the rule
-```
-
-## Configuration
-
-Settings are stored in:
-
-```
-config/vanillaoverrides.json
-```
-
-You can edit the file manually or change values using commands. Changes are saved automatically.
 
 ## Suggestions
 
