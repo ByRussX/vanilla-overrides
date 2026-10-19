@@ -17,11 +17,8 @@ public interface UnleashVillagersMixin
     @Inject(method = "tickLeash", at = @At("HEAD"), cancellable = true)
     private static <E extends Entity & Leashable> void vanillaOverrides$onTickLeash(ServerLevel level, E entity, CallbackInfo ci)
     {
-        // If the entity is not a villager, call the original method
-        if (!(entity instanceof Villager))
-        {
-            return;
-        }
+        // Check if the entity is not a villager
+        if (!(entity instanceof Villager)) return;
 
         // If the override is off and the villager is leashed, the leash
         if (!ModConfig.VILLAGER_LEADS.get() && entity.isLeashed())

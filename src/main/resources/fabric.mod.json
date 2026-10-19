@@ -22,6 +22,7 @@
 	"mixins": [
 		"vanilla-overrides.mixins.json"
 	],
+	"accessWidener": "vanilla-overrides.classtweaker",
 	"depends": {
 		"fabricloader": ">=0.19.5",
 		"minecraft": "~26.3",

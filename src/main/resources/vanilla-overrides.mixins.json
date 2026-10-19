@@ -1,16 +1,17 @@
 {
-	"required": true,
-	"package": "byrussx.vanillaoverrides.mixin",
-	"compatibilityLevel": "JAVA_25",
-	"mixins": [
-		"LeashVillagersMixin",
-		"LeashVillagersNeckHeightMixin",
-		"UnleashVillagersMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	},
-	"overwrites": {
-		"requireAnnotations": true
+  "required": true,
+  "package": "byrussx.vanillaoverrides.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "LeashVillagersMixin",
+    "LeashVillagersNeckHeightMixin",
+    "UnleashVillagersMixin",
+    "InstantLeaveDecay"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
 	}
 }

@@ -23,13 +23,24 @@ public class ModCommands {
                     Commands.literal("overrides")
                             .requires(source -> source.permissions().hasPermission(Permissions.COMMANDS_OWNER))
 
-                            // /overrides villagerLeads
+                            // villagerLeads
                             .then(Commands.literal("villagerLeads")
                                     .executes(ctx -> showRule(ctx.getSource(), ModConfig.VILLAGER_LEADS))
                                     .then(Commands.argument("value", BoolArgumentType.bool())
                                             .executes(ctx -> setBoolRule(
                                                     ctx.getSource(),
                                                     ModConfig.VILLAGER_LEADS,
+                                                    BoolArgumentType.getBool(ctx, "value")
+                                            ))
+                                    )
+                            )
+                            // instantLeafDecay
+                            .then(Commands.literal("instantLeafDecay")
+                                    .executes(ctx -> showRule(ctx.getSource(), ModConfig.INSTANT_LEAF_DECAY))
+                                    .then(Commands.argument("value", BoolArgumentType.bool())
+                                            .executes(ctx -> setBoolRule(
+                                                    ctx.getSource(),
+                                                    ModConfig.INSTANT_LEAF_DECAY,
                                                     BoolArgumentType.getBool(ctx, "value")
                                             ))
                                     )
@@ -56,22 +67,17 @@ public class ModCommands {
         Object def = rule.getDefault();
 
         ChatFormatting color;
+
         // Chat formatting color
         if (value instanceof Boolean b)
         {
-            if (b)
-            {
-                color = ChatFormatting.GREEN;
-            }
-            else
-            {
-                color = ChatFormatting.RED;
-            }
+            if (b) color = ChatFormatting.GREEN;
+            else color = ChatFormatting.RED;
         }
 
-        else
+        else color = ChatFormatting.DARK_AQUA;
         {
-            color = ChatFormatting.DARK_AQUA;
+
         }
 
         source.sendSuccess(() ->

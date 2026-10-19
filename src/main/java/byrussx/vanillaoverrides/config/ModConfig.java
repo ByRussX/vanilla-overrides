@@ -31,6 +31,13 @@ public class ModConfig
             List.of(true, false)
     ));
 
+    public static final ModRule<Boolean> INSTANT_LEAF_DECAY = register(new ModRule<>(
+            "instantLeafDecay",
+            "Leaves will now break instantly.",
+            false,
+            List.of(true, false)
+    ));
+
     private static <T> ModRule<T> register(ModRule<T> rule)
     {
         RULES.put(rule.getName(), rule);
